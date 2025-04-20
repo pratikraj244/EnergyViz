@@ -3,7 +3,8 @@ st.set_page_config(
     page_title="Energyviz",
     layout="wide"
 )
-st.markdown("""
+def main():
+    st.markdown("""
     <style>
     /* Sidebar styling - always blue with white text */
     [data-testid="stSidebar"] {
@@ -142,3 +143,6 @@ st.markdown("""
     if source:
         st.header(source)
         st.write(energy_info[source])
+
+if __name__ == "__main__":
+    main()
