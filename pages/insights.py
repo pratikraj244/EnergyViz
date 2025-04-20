@@ -7,10 +7,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import datetime as dt
 import pydeck as pdk
-import geopandas as gpd
-from shapely import wkt
 from sklearn.preprocessing import MinMaxScaler
-import json
 
 def main():
     st.markdown("""
